@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AGUELID Freelance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(45deg, #4CAF50, #2196F3);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #FFC107;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 36px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .services, .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service, .project {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .service:hover, .project:hover {
+            transform: translateY(-10px);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        /* Effet 3D sur mobile */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 28px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AGUELID Freelance</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Bienvenue sur AGUELID Freelance</h2>
+    <p>Votre partenaire de confiance pour la conception et la programmation électronique, ainsi que le développement de solutions digitales sur mesure.</p>
+</section>
+
+<section id="about">
+    <h2>À propos de nous</h2>
+    <p>Chez AGUELID, nous sommes spécialisés dans la conception et la programmation électronique, ainsi que le développement de sites web et d'applications mobiles. Nous mettons à disposition notre expertise pour créer des solutions innovantes, adaptées à vos besoins, qu'il s'agisse de machines industrielles, de projets robotiques, ou d'applications logicielles complexes.</p>
+</section>
+
+<section id="services">
+    <h2>Nos Services</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Conception de Machines Industrielles</h3>
+            <p>Nous concevons des machines sur mesure pour l'automatisation industrielle et la production.</p>
+        </div>
+        <div class="service">
+            <h3>Robotique</h3>
+            <p>Développement de solutions robotiques avancées pour répondre aux défis de l'industrie 4.0.</p>
+        </div>
+        <div class="service">
+            <h3>Applications Android</h3>
+            <p>Création d'applications Android performantes et intuitives pour votre entreprise.</p>
+        </div>
+        <div class="service">
+            <h3>Sites Web</h3>
+            <p>Développement de sites web modernes, responsives et optimisés pour le référencement.</p>
+        </div>
+        <div class="service">
+            <h3>Logiciels Windows</h3>
+            <p>Conception de logiciels sur mesure pour améliorer vos opérations sur Windows.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+        <div class="project">
+            <h3>Projet Industriel</h3>
+            <p>Automatisation complète d'une ligne de production pour une usine manufacturière.</p>
+        </div>
+        <div class="project">
+            <h3>Application Robotique</h3>
+            <p>Développement d'un système de robotique pour la gestion d'inventaires.</p>
+        </div>
+        <div class="project">
+            <h3>App Android - Gestion d'Équipe</h3>
+            <p>Une application mobile pour la gestion d'équipes sur le terrain.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contactez-nous</h2>
+    <form action="#" method="POST">
+        <label for="name">Nom:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 AGUELID Freelance. Tous droits réservés.</p>
+</footer>
+
+</body>
+  </html>
+  
