@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AGUELID Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(45deg, #4CAF50, #2196F3);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #FFC107;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 36px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AGUELID Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m the founder of AGUELID Automation. I specialize in industrial machine design, robotics, and software development for Android and Windows. This portfolio showcases some of the projects I’ve worked on.</p>
+</section>
+
+<section id="portfolio">
+    <h2>My Projects</h2>
+    <div class="portfolio">
+        <div class="project">
+            <img src="https://aguelid.github.io/Aguelid-/images%20(11).png" alt="Industrial Machine Design">
+            <h3>Industrial Machine Design</h3>
+            <p>Custom-designed machines for industrial automation and production processes.</p>
+        </div>
+        <div class="project">
+            <img src="https://aguelid.github.io/Aguelid-/images%20(12).png" alt="Android App Development">
+            <h3>Android App Development</h3>
+            <p>High-performance and intuitive Android apps tailored to various business needs.</p>
+        </div>
+        <div class="project">
+            <img src="https://aguelid.github.io/Aguelid-/images%20(34).jpeg" alt="Windows Software Development">
+            <h3>Windows Software Development</h3>
+            <p>Efficient software solutions for improving operational workflows on Windows systems.</p>
+        </div>
+        <div class="project">
+            <img src="https://aguelid.github.io/Aguelid-/20240913_171720.jpg" alt="Website Design">
+            <h3>Website Development</h3>
+            <p>Responsive, modern websites built for businesses and optimized for SEO.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:aguelid0210@gmail.com" method="POST" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 AGUELID Automation. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
